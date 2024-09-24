@@ -48,38 +48,13 @@ const Menu = ({ signOut, groups, ...user }) => {
         },
         {
           type: "menu-dropdown",
-          text: "Authors",
-          onItemClick: ((e) => { itemClick(e) }),
-          iconName: "user-profile",
-          items: [
-            {
-              id: "Eli",
-              text: "Elizabeth Fuentes Leone",
-              href: "https://www.linkedin.com/in/lizfue/",
-              external: true,
-              externalIconAriaLabel:
-                " (opens in new tab)"
-            },
-            {
-              id: "Kike",
-              text: "Enrique Rodríguez",
-              href: "https://www.linkedin.com/in/enriquerodriguezgarrido/",
-              external: true,
-              externalIconAriaLabel:
-                " (opens in new tab)"
-            },
-          ]
-
-        },
-        {
-          type: "menu-dropdown",
           text: "You",
           onItemClick: ((e) => { itemClick(e) }),
           iconName: "user-profile",
           items: [
             { id: "email", text: user.signInDetails?.loginId },
             {
-              id: "signout", text: "Salir"
+              id: "signout", text: "Logout"
             }
           ]
 
