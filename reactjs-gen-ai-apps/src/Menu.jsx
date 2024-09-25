@@ -42,11 +42,6 @@ const Menu = ({ signOut, groups, ...user }) => {
           external: true, externalIconAriaLabel: " (opens in a new tab)"
         },
         {
-          type: "button", text: "This repo", 
-          href: "https://github.com/build-on-aws/building-reactjs-gen-ai-apps-with-amazon-bedrock-javascript-sdk", 
-          external: true, externalIconAriaLabel: " (opens in a new tab)"
-        },
-        {
           type: "menu-dropdown",
           text: "You",
           onItemClick: ((e) => { itemClick(e) }),
