@@ -46,6 +46,7 @@ export default () => {
         if (filteredDocs.length === 0) {
             let nodocs_msg = "I'm sorry. No Documents, so I don't know the answer to that question."
             setLLMResponse(msg => msg + `${nodocs_msg}`)
+            setLoading(false)
         } else {
             const answer  =  await answerQuestionWithContext({question: question, docs: filteredDocs,   callbacks: [{ handleLLMNewToken }]})
             console.log(answer)
